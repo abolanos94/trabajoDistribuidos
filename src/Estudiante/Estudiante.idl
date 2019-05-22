@@ -1,0 +1,8 @@
+module EstudianteApp{
+interface Estudiante{
+boolean insertarEstudiante( in long id_estudiante, in wstring est_nombre, in wstring est_apellido, in wstring est_fec_nacimiento, in long est_carrera);
+boolean actualizarEstudiante(in long id_estudiante, in wstring este_nombre, in wstring est_apellido, in wstring est_fecha_nacimiento, in long est_carrera);
+boolean eliminarEstudiante(in long id_estudiante);
+oneway void shutdown();
+};
+};
